@@ -10,6 +10,15 @@ terraform-provider-libvirt
 image-bootstrap-git
 ```
 
+# Usage
+
+Choose the distro you want in your vm image
+
+```
+cd <distro>
+terraform apply
+```
+
 # Environment variables
 
 ```
