@@ -37,8 +37,8 @@ resource "libvirt_volume" "debian-dev-root" {
   name = "debian-dev.qcow2"
   pool = "default"
   format = "qcow2"
-  #source = "https://cdimage.debian.org/cdimage/openstack/current-10/debian-10-openstack-amd64.qcow2"
-  source = "/home/${var.user_name}/Downloads/debian-10-openstack-amd64.qcow2"
+  source = "https://cdimage.debian.org/cdimage/openstack/current-10/debian-10-openstack-amd64.qcow2"
+  #source = "/home/${var.user_name}/Downloads/debian-10-openstack-amd64.qcow2"
 }
 
 resource "libvirt_domain" "debian-dev" {

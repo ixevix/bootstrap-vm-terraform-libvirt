@@ -45,8 +45,8 @@ resource "libvirt_volume" "dev-root" {
   name = "dev.qcow2"
   pool = "default"
   format = "qcow2"
-  source = "./arch-2021-01-17.qcow2"
-  #source = "https://linuximages.de/openstack/arch/arch-openstack-LATEST-image-bootstrap.qcow2"
+  #source = "./arch-2021-01-17.qcow2"
+  source = "https://linuximages.de/openstack/arch/arch-openstack-LATEST-image-bootstrap.qcow2"
   #source = "/home/${var.user_name}/Downloads/arch-openstack-LATEST-image-bootstrap.qcow2"
 }
 
