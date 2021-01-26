@@ -37,8 +37,8 @@ resource "libvirt_volume" "ubuntu-dev-root" {
   name = "ubuntu-dev.qcow2"
   pool = "default"
   format = "qcow2"
-  #source = "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64-disk-kvm.img"
-  source = "/home/${var.user_name}/Downloads/focal-server-cloudimg-amd64-disk-kvm.img"
+  source = "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64-disk-kvm.img"
+  #source = "/home/${var.user_name}/Downloads/focal-server-cloudimg-amd64-disk-kvm.img"
 }
 
 resource "libvirt_domain" "ubuntu-dev" {
