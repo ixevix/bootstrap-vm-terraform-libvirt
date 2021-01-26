@@ -69,6 +69,7 @@ runcmd:
  - sed -i "s/\[options\]/\[options\]\nColor\nVerbosePkgLists/" /etc/pacman.conf
  - su -c "/home/${user_name}/.bin/install_yay.sh" - ${user_name}
  - systemctl enable --now docker
+ - systemctl enable --now qemu-guest-agent
 
 write_files:
 - content: |
