@@ -22,8 +22,6 @@ users:
     sudo: ['ALL=(ALL) NOPASSWD:ALL']
     shell: /bin/zsh
     groups: [wheel,users,docker,sys]
-  - name: root
-    ssh_authorized_keys: ${authorized_keys}
 
 packages:
  - man-db
