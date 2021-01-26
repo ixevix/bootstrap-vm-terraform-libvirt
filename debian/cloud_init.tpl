@@ -6,7 +6,7 @@ users:
     ssh_authorized_keys: ${authorized_keys}
     sudo: ['ALL=(ALL) NOPASSWD:ALL']
     shell: /bin/zsh
-    groups: [wheel,users,docker,sys]
+    groups: [wheel,users,docker]
 
 packages:
  - man-db
