@@ -63,6 +63,7 @@ runcmd:
     /home/${user_name}/.config,
     /home/${user_name}/.zshrc,
     /home/${user_name}/.bin/install_yay.sh,
+    /home/${user_name}/.bin,
     /home/${user_name} ]
  - chmod u+x /home/${user_name}/.bin/install_yay.sh
  - systemctl enable --now systemd-timesyncd
